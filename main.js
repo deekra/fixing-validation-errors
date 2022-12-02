@@ -72,6 +72,7 @@ function validateForm(){
     validPhone = true;
   } 
   
+ /*
   
    var Username = document.getElementById("username").value;
   if (Username === "null" ||
@@ -157,6 +158,7 @@ function validateForm(){
   } 
   
   document.getElementById("errorMessages").innerHTML = errorMessages;
- return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
- 
+   return (validFirstname && validLastname && validEmail && validPhone);
+ / * return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
+ */
 }
