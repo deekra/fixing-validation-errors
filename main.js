@@ -44,7 +44,6 @@ function validateForm(){
     validAddress = true;
   } 
   
- */
    var State = document.getElementById("state").value;
   if (State === "null" ||
       State === "") {
@@ -85,7 +84,46 @@ function validateForm(){
   return (validState && validCountry && validZipcode);
   }
   
- /*
+
   return (validEmail && validAddress && validState && validCountry && validZipcode);*/
 
+ var Address = document.getElementById("address").value;
+  if (Address === "null" ||
+      Address === "") {
+    
+    errorMessages += "<p>Adress is required.</p>";
+  
+  }
+  else {
+     validAddress = true;
+  } 
+  
+ 
+ 
+var State = document.getElementById("state").value;
+  if (State === "null" ||
+      State === "") {
+    
+    errorMessages = errorMessages +  "<p>State is required.</p>";
+  
+  }
+  else {
+    validState = true;
+  } 
+
+var Country = document.getElementById("country").value;
+  if (Country === "null" ||
+      Country === "") {
+    
+    errorMessages = errorMessages + "<p>Country is required.</p>";
+  
+  }
+  else {
+   validCountry = true;
+  } 
+
+   
+  document.getElementById("errorMessages").innerHTML = errorMessages;
+  return (validAddress && validState && validCountry);
+}
 
