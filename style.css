@@ -7,10 +7,10 @@
         }
 
 @keyframes color {
-                   0%   {background-color: red;}
-                   25%  {background-color: yellow;}
-                   50%  {background-color: blue;}
-                   100% {background-color: green;}
+                   0%   {background-color: #FFDAB9;}
+                   25%  {background-color: #FFE4E1;}
+                   50%  {background-color: #FFB6C1;}
+                   100% {background-color: #FFA07A;}
                   }
 
   
