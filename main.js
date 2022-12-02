@@ -20,24 +20,24 @@ function validateForm(){
   if (Firstname === "null" ||
       Firstname === "") 
   {
-    errorMessages += "<p> First Name is required. It must be only letters and less than 20 characters. </p>";
+    errorMessages = errorMessages + "<p> First Name is required. It must be only letters and less than 20 characters. </p>";
   }
   else {
     validFirstname = true;
   } 
-  /*
+  
   var Lastname = document.getElementById("lastname").value;
   
   if (Lastname === "null" ||
       Lastname === "") 
   {
-    errorMessages += "<p> Last Name is required. It must be only letters and less than 50 characters. </p>";
+    errorMessages = errorMessages + "<p> Last Name is required. It must be only letters and less than 50 characters. </p>";
   }
   else {
     validLastname = true;
   } 
   
-
+/*
  var Email = document.getElementById("email").value;
   if (Email === "null" ||
       Email === "") {
@@ -144,5 +144,5 @@ function validateForm(){
   document.getElementById("errorMessages").innerHTML = errorMessages;
  /* return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
   */
-  return (validFirstname);
+  return (validFirstname && validLastname);
 }
