@@ -41,6 +41,8 @@ function validateForm(){
     validLastname = true;
   } 
   
+  /*
+  
   var Email = document.getElementById("email").value;
   var atpos = Email.indexOf("@");
   var dotpos = Email.lastIndexOf(".");
@@ -72,7 +74,8 @@ function validateForm(){
     validPhone = true;
   } 
   
- /*
+  */
+
   
    var Username = document.getElementById("username").value;
   if (Username === "null" ||
@@ -155,10 +158,10 @@ function validateForm(){
   }
   else {
     validZipcode = true;
-  } */
+  }
   
   document.getElementById("errorMessages").innerHTML = errorMessages;
-   return (validFirstname && validLastname && validEmail && validPhone);
+   return (validFirstname && validLastname && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
  / * return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
  */
 }
