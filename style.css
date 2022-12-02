@@ -1,23 +1,4 @@
-.pulse{
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  animation: alarm 1500ms infinite;
-}
 
-@keyframes alarm{
-  
-  0%{
-    
-    box-shadow: 0 0 0 0 #FFFFFF;
-  }
-  
-  100% {
-    
-    box-shadow: 0 0 0 0 #FFFFFF;
-     
-  }
-  
   
   
   
