@@ -25,7 +25,7 @@ function validateForm(){
   else {
     validFirstname = true;
   } 
-  
+  /*
   var Lastname = document.getElementById("lastname").value;
   
   if (Lastname === "null" ||
@@ -139,8 +139,10 @@ function validateForm(){
   else {
     validZipcode = true;
   } 
-
+*/
   
   document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
+ /* return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
+  */
+  return (validFirstname);
 }
