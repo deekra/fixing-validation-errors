@@ -1,8 +1,11 @@
 .pulse{
-  animation: pulse 1500ms infinite;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  animation: alarmclock 1500ms infinite;
 }
 
-@keyframes pulse{
+@keyframes alarmclock{
   
   0%{
     
