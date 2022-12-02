@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content:center;
-  animation: alarmclock 1500ms infinite;
+  animation: alarm 1500ms infinite;
 }
 
-@keyframes alarmclock{
+@keyframes alarm{
   
   0%{
     
