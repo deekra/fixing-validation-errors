@@ -145,7 +145,7 @@ function validateForm(){
     validCountry = true;
   } 
   
-  var Zipcode = document.getElementById("zipcode").value;
+ /* var Zipcode = document.getElementById("zipcode").value;
   if ( country === "USA" ||
      Zipcode === "null" ||
       Zipcode === "" ||
@@ -158,8 +158,9 @@ function validateForm(){
   else {
     validZipcode = true;
   }
+  */
   document.getElementById("errorMessages").innerHTML = errorMessages;
- return (validFirstname && validLastname && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
+ return (validFirstname && validLastname && validUsername && validPassword && validAddress && validCity && validState && validCountry);
  /* return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
  */
 }
