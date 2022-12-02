@@ -30,7 +30,7 @@ function validateForm(){
   }
   else {
     validEmail = true;
-  } */
+  } 
   
   
   var Address = document.getElementById("address").value;
@@ -43,7 +43,7 @@ function validateForm(){
   else {
     validAddress = true;
   } 
-  
+  */
   
    var State = document.getElementById("state").value;
   if (State === "null" ||
@@ -82,7 +82,7 @@ function validateForm(){
   }
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validAddress && validState && validCountry && validZipcode);
+  return (validState && validCountry && validZipcode);
  /*
   return (validEmail && validAddress && validState && validCountry && validZipcode);*/
 
