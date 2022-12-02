@@ -35,45 +35,41 @@ function validateForm(){
   
   var Address = document.getElementById("address").value;
   if (Address === "null" ||
-      Address === "") {
-    
+      Address === "")
+  {
     errorMessages = errorMessages +  "<p> Address is required.</p>";
-  
   }
   else {
     validAddress = true;
   } 
   
+ 
    var State = document.getElementById("state").value;
   if (State === "null" ||
       State === "") {
-    
     errorMessages = errorMessages +  "<p> State is required.</p>";
-  
   }
   else {
     validState = true;
   } 
   
+ 
     var Country = document.getElementById("country").value;
   if (Country === "null" ||
-      Country === "") {
-    
+      Country === "")
+  { 
     errorMessages = errorMessages +  "<p> Country is required.</p>";
-  
   }
   else {
     validCountry = true;
   } 
   
   var Zipcode = document.getElementById("zipcode").value;
-  if (Zipcode === "null" ||
-      Zipcode === "" ||
-      country === "USA"
+  if (country === "USA"
       Zipcode.length > 5) 
   {
     
-    errorMessages = errorMessages +  "<p> Zipcode is required and cannot be greater than 5 characters.</p>";
+    errorMessages = errorMessages +  "<p> Zipcode is required if the country is USA and it cannot be greater than 5 characters.</p>";
   
   }
   else {
