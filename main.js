@@ -37,8 +37,6 @@ function validateForm(){
     validLastname = true;
   } 
   
-  
-
 
  var Email = document.getElementById("email").value;
   if (Email === "null" ||
