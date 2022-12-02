@@ -74,7 +74,8 @@ function validateForm(){
     validPhone = true;
   } 
 
-  
+   */
+   
    var Username = document.getElementById("username").value;
   if (Username === "null" ||
       Username === "" ||
@@ -157,7 +158,6 @@ function validateForm(){
   else {
     validZipcode = true;
   }
-   */
   document.getElementById("errorMessages").innerHTML = errorMessages;
  return (validFirstname && validLastname && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
  /* return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
