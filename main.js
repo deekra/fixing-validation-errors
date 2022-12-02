@@ -145,7 +145,8 @@ function validateForm(){
   var Zipcode = document.getElementById("zipcode").value;
   if (Zipcode === "null" ||
       Zipcode === "" ||
-      Zipcode.length > 5) {
+      Zipcode.length > 5) 
+  {
     
     errorMessages = errorMessages +  "<p> Zipcode is required and cannot be greater than 5 characters.</p>";
   
