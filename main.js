@@ -82,6 +82,8 @@ function validateForm(){
   }
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validEmail && validAddress && validState && validCountry && validZipcode);
+  return (validAddress && validState && validCountry && validZipcode);
+ /*
+  return (validEmail && validAddress && validState && validCountry && validZipcode);*/
 
 }
