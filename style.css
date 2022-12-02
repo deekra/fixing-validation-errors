@@ -3,7 +3,7 @@
          height: 50px;
          background-color: #FFA07A;
          animation-name: color;
-         animation-duration: 2s;
+         animation-duration: 5s;
         }
 
 @keyframes color {
