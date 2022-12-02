@@ -44,11 +44,11 @@ function validateForm(){
   var Email = document.getElementById("email").value;
   var atpos = Email.indexOf("@");
   var dotpos = Email.lastIndexOf(".");
-  if (Email === "null" ||
-      Email === ""
+  if ( Email === "null" ||
+      Email === "" ||
       atpos< 1 ||
       dotpos<atpos+2 ||
-      dotpos+2>=Email.length)
+      dotpos+2>=Email.length )
   {
     
     errorMessages = errorMessages +  "<p> Email is not valid. </p>";
@@ -143,7 +143,7 @@ function validateForm(){
   } 
   
   var Zipcode = document.getElementById("zipcode").value;
-  if country === "USA
+  if ( country === "USA" ||
      Zipcode === "null" ||
       Zipcode === "" ||
       Zipcode.length > 5) 
