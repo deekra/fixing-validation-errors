@@ -7,10 +7,19 @@
         }
 
 @keyframes color {
-                   0%   {background-color: #db7093;}
-                   25%  {background-color: #4169e1;}
-                   50%  {background-color: #44d7a8;}
-                   100% {background-color: #FFA07A;}
+                   0%   {background-color: #db7093; 
+                         left:0px; 
+                         top:0px;}
+                   25%  {background-color: #4169e1;
+                         left:0px; 
+                         top:0px;}
+                        
+                   50%  {background-color: #44d7a8;
+                         left: 200px;
+                         top:0px;}
+                   100% {background-color: #FFA07A;
+                          left: 200px;
+                         top:0px;}
                   }
 
   
