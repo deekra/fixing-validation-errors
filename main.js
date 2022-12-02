@@ -15,7 +15,7 @@ function validateForm(){
  var validZipcode = false;
 
   
- /*  var Email = document.getElementById("email").value;
+  var Email = document.getElementById("email").value;
   var atpos = Email.indexOf("@");
   var dotpos = Email.lastIndexOf(".");
   if ( Email === "null" ||
@@ -71,7 +71,7 @@ function validateForm(){
       Zipcode === "" ||
       country === "USA"
       Zipcode.length > 5) 
-          {
+  {
     
     errorMessages = errorMessages +  "<p> Zipcode is required and cannot be greater than 5 characters.</p>";
   
@@ -81,49 +81,6 @@ function validateForm(){
   }
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validState && validCountry && validZipcode);
-  }
-  
+  return (validEmail && validAddress && validState && validCountry && validZipcode);
 
-  return (validEmail && validAddress && validState && validCountry && validZipcode);*/
-
- var Address = document.getElementById("address").value;
-  if (Address === "null" ||
-      Address === "") {
-    
-    errorMessages += "<p>Adress is required.</p>";
-  
-  }
-  else {
-     validAddress = true;
-  } 
-  
- 
- 
-var State = document.getElementById("state").value;
-  if (State === "null" ||
-      State === "") {
-    
-    errorMessages = errorMessages +  "<p>State is required.</p>";
-  
-  }
-  else {
-    validState = true;
-  } 
-
-var Country = document.getElementById("country").value;
-  if (Country === "null" ||
-      Country === "") {
-    
-    errorMessages = errorMessages + "<p>Country is required.</p>";
-  
-  }
-  else {
-   validCountry = true;
-  } 
-
-   
-  document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validAddress && validState && validCountry);
 }
-
