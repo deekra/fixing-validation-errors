@@ -14,34 +14,6 @@ function validateForm(){
  var validCountry = false;
  var validZipcode = false;
 
-
-  var Firstname = document.getElementById("firstname").value;
-  
-  if (Firstname === "null" ||
-      Firstname === "" ||
-      !Firstname.match(letters) ||
-      Firstname.length > 20) 
-  {
-    errorMessages = errorMessages + "<p> First Name is required and cannot be greater than 20 characters.</p>";
-  }
-  else {
-    validFirstname = true;
-  } 
-  
-  var Lastname = document.getElementById("lastname").value;
-  
-  if (Lastname === "null" ||
-      Lastname === "" || 
-      !Lastname.match(letters) ||
-      Lastname.length > 50) 
-  {
-    errorMessages = errorMessages + "<p> Last Name is required and cannot be greater than 50 characters. </p>";
-  }
-  else {
-    validLastname = true;
-  } 
-  
-  /*
   
   var Email = document.getElementById("email").value;
   var atpos = Email.indexOf("@");
@@ -61,46 +33,6 @@ function validateForm(){
   } 
   
   
- var Phone = document.getElementById("phone").value;
-  if (Phone === "null" ||
-      Phone === "" ||
-      !Phone.match(numbers) ||
-      Phone.length > 15) {
-    
-    errorMessages = errorMessages +  "<p> Phone number is not valid.</p>";
-  
-  }
-  else {
-    validPhone = true;
-  } 
-
-   */
-   
-   var Username = document.getElementById("username").value;
-  if (Username === "null" ||
-      Username === "" ||
-      Username.length > 12) {
-    
-    errorMessages = errorMessages +  "<p> Username is required and cannot be greater than 12 characters.</p>";
-  
-  }
-  else {
-    validUsername = true;
-  } 
-  
-  
-   var Password = document.getElementById("password").value;
-  if (Password === "null" ||
-      Password === "" ||
-      Password.length > 7) {
-    
-    errorMessages = errorMessages +  "<p> Password is required and cannot be greater than 7 characters.</p>";
-  
-  }
-  else {
-    validPassword = true;
-  } 
-  
   var Address = document.getElementById("address").value;
   if (Address === "null" ||
       Address === "") {
@@ -112,16 +44,6 @@ function validateForm(){
     validAddress = true;
   } 
   
-  var City = document.getElementById("city").value;
-  if (City === "null" ||
-      City === "") {
-    
-    errorMessages = errorMessages +  "<p> City is required.</p>";
-  
-  }
-  else {
-    validCity = true;
-  } 
   
    var State = document.getElementById("state").value;
   if (State === "null" ||
@@ -145,7 +67,7 @@ function validateForm(){
     validCountry = true;
   } 
   
- /* var Zipcode = document.getElementById("zipcode").value;
+  var Zipcode = document.getElementById("zipcode").value;
   if ( country === "USA" ||
      Zipcode === "null" ||
       Zipcode === "" ||
@@ -158,9 +80,8 @@ function validateForm(){
   else {
     validZipcode = true;
   }
-  */
+
   document.getElementById("errorMessages").innerHTML = errorMessages;
- return (validFirstname && validLastname && validUsername && validPassword && validAddress && validCity && validState && validCountry);
- /* return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
- */
+  return (validEmail && validAddress && validState && validCountry && validZipcode);
+
 }
