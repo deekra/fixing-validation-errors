@@ -43,8 +43,8 @@ function validateForm(){
   else {
     validAddress = true;
   } 
-  */
   
+ */
    var State = document.getElementById("state").value;
   if (State === "null" ||
       State === "") {
@@ -83,7 +83,9 @@ function validateForm(){
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
   return (validState && validCountry && validZipcode);
+  }
+  
  /*
   return (validEmail && validAddress && validState && validCountry && validZipcode);*/
 
-}
+
