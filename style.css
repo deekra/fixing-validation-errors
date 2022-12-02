@@ -2,6 +2,7 @@
          width: 50px;
          height: 50px;
          background-color: #FFA07A;
+         position: relative;
          animation-name: color;
          animation-duration: 10s;
         }
@@ -10,6 +11,7 @@
                    0%   {background-color: #db7093; 
                          left:0px; 
                          top:0px;}
+         
                    25%  {background-color: #4169e1;
                          left:0px; 
                          top:0px;}
@@ -17,9 +19,10 @@
                    50%  {background-color: #44d7a8;
                          left: 200px;
                          top:0px;}
+         
                    100% {background-color: #FFA07A;
                           left: 200px;
-                         top:0px;}
+                          top:0px;}
                   }
 
   
