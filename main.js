@@ -120,40 +120,29 @@ function validateForm(){
     validState = true;
   } 
   
-    var City = document.getElementById("city").value;
-  if (City === "null" ||
-      City === "") {
+    var Country = document.getElementById("country").value;
+  if (Country === "null" ||
+      Country === "") {
     
-    errorMessages = errorMessages +  "<p> City is required.</p>";
+    errorMessages = errorMessages +  "<p> Country is required.</p>";
   
   }
   else {
-    validCity = true;
+    validCountry = true;
   } 
   
-    var City = document.getElementById("city").value;
-  if (City === "null" ||
-      City === "") {
+  var Zipcode = document.getElementById("zipcode").value;
+  if (Zipcode === "null" ||
+      Zipcode === "") {
     
-    errorMessages = errorMessages +  "<p> City is required.</p>";
+    errorMessages = errorMessages +  "<p> Zipcode is required.</p>";
   
   }
   else {
-    validCity = true;
-  } 
-
-var Comment = document.getElementById("comment").value;
-  if (Comment === "null" ||
-      Comment === "") {
-    
-    errorMessages = errorMessages + "<p>Comment is required.</p>";
-  
-  }
-  else {
-    ucomment = true;
+    validZipcode = true;
   } 
 
-   
+  
   document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validFirstname && validEmail && ucomment);
+  return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
 }
