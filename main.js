@@ -91,7 +91,7 @@ function validateForm(){
       Password === "" ||
       Password.length > 7) {
     
-    errorMessages = errorMessages +  "<p> Password is required and cannot be greater than 50 characters.</p>";
+    errorMessages = errorMessages +  "<p> Password is required and cannot be greater than 7 characters.</p>";
   
   }
   else {
@@ -153,7 +153,6 @@ function validateForm(){
   else {
     validZipcode = true;
   } 
-*/
   
   document.getElementById("errorMessages").innerHTML = errorMessages;
  return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
