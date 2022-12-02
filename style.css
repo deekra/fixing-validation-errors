@@ -1,21 +1,14 @@
 .pulse{
-         height: 100px;
-         width: 100px;
-         background: #808080;
-         position: absolute;
-         margin: auto;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         border-radius: 50;
-         display: grid;
-         place-items: center;
-         font-size: 50px;
-         }
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        }
 
-         .pulse:before,
-         .pulse:after{
-           
+        @keyframes example {
+         from {background-color: red;}
+         to {background-color: yellow;}
           
 
   
