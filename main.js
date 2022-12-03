@@ -53,7 +53,7 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   var country = document.getElementById("country").value;
    if (Zipcode === "null" &&
        Zipcode === "" &&
-       country = "USA" && 
+       country === "USA" && 
        Zipcode.length > 5) 
 
   {
@@ -69,4 +69,3 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   return (validEmail && validAddress && validState && validCountry && validZipcode);
 
 } 
-
