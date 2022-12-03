@@ -134,9 +134,11 @@ if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Ema
   } 
   
   var Zipcode = document.getElementById("zipcode").value;
-  if (Zipcode === "null" ||
-      Zipcode === "" ||
-      Zipcode.length > 5) 
+  var Country = document.getElementById("country").value;
+  if ( Country === "USA" 
+       Zipcode === "null" 
+       Zipcode === "" 
+       Zipcode.length > 5) 
   
   {
     
