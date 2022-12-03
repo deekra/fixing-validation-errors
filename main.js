@@ -18,7 +18,7 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   } 
   
   
-  var Address = document.getElementById("homeaddress").value;
+  var Address = document.getElementById("address").value;
   if (Address === "null" ||
       Address === "")
   {
