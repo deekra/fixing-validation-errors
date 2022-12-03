@@ -18,25 +18,16 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   }  */
   
   
-  var Address = document.getElementById("address").value;
-  if (Address === "null" ||
-      Address === "")
-  {
-    errorMessages = errorMessages +  "<p> Address is required.</p>";
-  }
-  else {
-    validAddress = true;
-  } 
-  
- 
-   var State = document.getElementById("state").value;
+  var State = document.getElementById("state").value;
   if (State === "null" ||
-      State === "") {
+      State === "")
+  {
     errorMessages = errorMessages +  "<p> State is required.</p>";
   }
   else {
     validState = true;
   } 
+  
   
  
    var Country = document.getElementById("country").value;
@@ -66,7 +57,7 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   }*/
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validAddress && validState && validCountry);
+  return (validState && validCountry);
  
   /*return (validEmail && validAddress && validState && validCountry && validZipcode);*/
 
