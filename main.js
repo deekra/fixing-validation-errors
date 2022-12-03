@@ -133,7 +133,7 @@ if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Ema
     validCountry = true;
   } 
   
-  var Zipcode = document.getElementById("zipcode").value;
+ /* var Zipcode = document.getElementById("zipcode").value;
   var Country = document.getElementById("country").value;
   if ( Country === "USA" 
        Zipcode === "null" 
@@ -147,7 +147,7 @@ if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Ema
   }
   else {
     validZipcode = true;
-  } 
+  }  */
  
   document.getElementById("errorMessages").innerHTML = errorMessages;
  return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZipcode);
