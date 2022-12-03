@@ -159,10 +159,3 @@ if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Ema
 
   
 
-
-  document.getElementById("errorMessages").innerHTML = errorMessages;
- 
- return (validState && validCountry);
-
-
-} 
