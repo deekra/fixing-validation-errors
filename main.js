@@ -65,10 +65,10 @@ function validateForm(){
   } 
   
   var Zipcode = document.getElementById("zipcode").value;
-   if ( country === "USA" ||
-     Zipcode === "null" ||
-      Zipcode === "" ||
-      Zipcode.length > 5) 
+   if (Zipcode === "null" &&
+       Zipcode === "" &&
+       country = "USA" && 
+       Zipcode.length > 5) 
 
   {
     
