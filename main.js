@@ -15,7 +15,7 @@ function validateForm(){
  var validZipcode = false;
 
   
-  var Email = document.getElementById("email").value;
+ /* var Email = document.getElementById("email").value;
   var atpos = Email.indexOf("@");
   var dotpos = Email.lastIndexOf(".");
   if ( Email === "null" ||
@@ -30,7 +30,7 @@ function validateForm(){
   }
   else {
     validEmail = true;
-  } 
+  } */
   
   
   var Address = document.getElementById("address").value;
