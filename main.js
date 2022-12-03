@@ -6,7 +6,7 @@ function validateForm(){
  var validCountry = false;
  var validZipcode = false;
 
-var userEmail = document.getElementById("email").value;
+/*var userEmail = document.getElementById("email").value;
 var atpos = userEmail.indexOf("@");
 var dotpos = userEmail.lastIndexOf(".");
 if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
@@ -15,7 +15,7 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   }
   else {
     validEmail = true;
-  } 
+  }  */
   
   
   var Address = document.getElementById("address").value;
@@ -49,7 +49,7 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
     validCountry = true;
   } 
   
-  var Zipcode = document.getElementById("zipcode").value;
+  /*var Zipcode = document.getElementById("zipcode").value;
   var country = document.getElementById("country").value;
    if (Zipcode === "null"
        Zipcode === ""
@@ -63,9 +63,12 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   }
   else {
     validZipcode = true;
-  }
+  }*/
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validEmail && validAddress && validState && validCountry && validZipcode);
+  return (validAddress && validState && validCountry);
+ 
+  /*return (validEmail && validAddress && validState && validCountry && validZipcode);*/
+
 
 } 
