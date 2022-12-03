@@ -6,19 +6,12 @@ function validateForm(){
  var validCountry = false;
  var validZipcode = false;
 
-  
-var Email = document.getElementById("email").value;
- var atpos = Email.indexOf("@");
- var dotpos = Email.lastIndexOf(".");
-  if ( Email === "null" ||
-      Email === "" ||
-      atpos< 1 ||
-      dotpos<atpos+2 ||
-      dotpos+2>=Email.length )
-  {
-    
+var userEmail = document.getElementById("email").value;
+var atpos = userEmail.indexOf("@");
+var dotpos = userEmail.lastIndexOf(".");
+if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
+{  
     errorMessages = errorMessages +  "<p> Email is not valid. </p>";
-  
   }
   else {
     validEmail = true;
