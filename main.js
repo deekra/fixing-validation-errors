@@ -4,16 +4,15 @@ function validateForm(){
  var validCountry = false;
  var validZipcode = false;
   
-var State = document.getElementById("state").value;
-  if (State === "null" ||
-      State === "")
-  {
-    errorMessages = errorMessages +  "<p> State is required.</p>";
-  }
-  else {
-    validState = true;
-  } 
-  
+ var State = document.getElementById("state").value;
+  if (State === null || 
+      State ==="" )
+{
+  errorMessages = errorMessages +  "<p> State is required.</p>";
+}
+  else
+    return true;
+}
   
  
    /*  var Country = document.getElementById("country").value;
