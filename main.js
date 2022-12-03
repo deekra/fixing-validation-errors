@@ -17,7 +17,7 @@ function validateForm(){
   } 
   
  
- var Country = document.getElementById("country").value;
+/* var Country = document.getElementById("country").value;
   if (Country === "null" ||
       Country === "") {
     
@@ -43,7 +43,7 @@ function validateForm(){
   }
   else {
     validZipcode = true;
-  }
+  }*/
   
   document.getElementById("errorMessages").innerHTML = errorMessages;
  return (validCountry && validCountry && validZipcode);
