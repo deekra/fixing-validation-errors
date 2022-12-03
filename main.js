@@ -134,16 +134,13 @@ if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Ema
   } 
   
   var Zipcode = document.getElementById("zipcode").value;
-   var Country = document.getElementById("country").value;
- 
-  if (Zipcode === "null" 
-      Zipcode === ""
-      Country === "USA"
+  if (Zipcode === "null" ||
+      Zipcode === "" ||
       Zipcode.length > 5) 
   
   {
     
-    errorMessages = errorMessages +  "<p> Zipcode is required if country is USA and it cannot be greater than 12 characters .</p>";
+    errorMessages = errorMessages +  "<p> Zipcode is required if country is USA and it cannot be greater than 5 characters .</p>";
   
   }
   else {
