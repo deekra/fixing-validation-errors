@@ -8,8 +8,8 @@ function validateForm(){
 
   
 var Email = document.getElementById("email").value;
-  var atpos = Email.indexOf("@");
-  var dotpos = Email.lastIndexOf(".");
+ var atpos = Email.indexOf("@");
+ var dotpos = Email.lastIndexOf(".");
   if ( Email === "null" ||
       Email === "" ||
       atpos< 1 ||
@@ -46,7 +46,7 @@ var Email = document.getElementById("email").value;
   } 
   
  
-    var Country = document.getElementById("country").value;
+   var Country = document.getElementById("country").value;
   if (Country === "null" ||
       Country === "")
   { 
@@ -57,6 +57,7 @@ var Email = document.getElementById("email").value;
   } 
   
   var Zipcode = document.getElementById("zipcode").value;
+  var country = document.getElementById("country").value;
    if (Zipcode === "null" &&
        Zipcode === "" &&
        country = "USA" && 
