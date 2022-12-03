@@ -1,4 +1,4 @@
-/* function validateForm(){
+function validateForm(){
  var errorMessages ="";
  var validEmail = false;
  var validAddress = false;
@@ -74,55 +74,5 @@ var Email = document.getElementById("email").value;
   document.getElementById("errorMessages").innerHTML = errorMessages;
   return (validEmail && validAddress && validState && validCountry && validZipcode);
 
-} */
-
-
-function validateForm(){
- var validAddress = false;
- var validState = false;
- var validCountry = false;
-  var errorMessages ="";
-
-
-  var Address = document.getElementById("address").value;
-  if (Address === "null" ||
-      Address === "") {
-    
-    errorMessages += "<p>Address is required.</p>";
-  
-  }
-  else {
-    validAddress = true;
-  } 
-  
-  
-
-
-/* var Email = document.getElementById("email").value;
-  if (Email === "null" ||
-      Email === "") {
-    
-    errorMessages = errorMessages +  "<p>Email is required.</p>";
-  
-  }
-  else {
-    uemail = true;
-  } 
-
-var Comment = document.getElementById("comment").value;
-  if (Comment === "null" ||
-      Comment === "") {
-    
-    errorMessages = errorMessages + "<p>Comment is required.</p>";
-  
-  }
-  else {
-    ucomment = true;
-  }  */
-
-   
-  document.getElementById("errorMessages").innerHTML = errorMessages;
-  return (validAddress);
-}
-
+} 
 
