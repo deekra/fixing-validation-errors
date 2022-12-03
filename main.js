@@ -46,7 +46,7 @@ function validateForm(){
   }*/
   
   document.getElementById("errorMessages").innerHTML = errorMessages;
- return (validCountry && validCountry && validZipcode);
+ return (validState);
 
 }
  
