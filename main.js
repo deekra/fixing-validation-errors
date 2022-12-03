@@ -5,19 +5,20 @@ function validateForm(){
  var validCountry = false;
  var validZipcode = false;
 
-var userEmail = document.getElementById("email").value;
-var atpos = userEmail.indexOf("@");
-var dotpos = userEmail.lastIndexOf(".");
-if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
+var Email = document.getElementById("email").value;
+var atpos = Email.indexOf("@");
+var dotpos = Email.lastIndexOf(".");
+if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Email.length)
 {  
     errorMessages = errorMessages +  "<p> Email is not valid. </p>";
   }
   else {
     validEmail = true;
-  }  */
+  } 
+
   
   
-  var State = document.getElementById("state").value;
+ /* var State = document.getElementById("state").value;
   if (State === "null" ||
       State === "")
   {
@@ -53,11 +54,11 @@ if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
   }
   else {
     validZipcode = true;
-  }
+  } */
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
  
- return (validEmail && validState && validCountry && validZipcode);
+ return (validEmail);
 
 
 } 
