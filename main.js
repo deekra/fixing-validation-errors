@@ -6,7 +6,7 @@ function validateForm(){
  var validCountry = false;
  var validZipcode = false;
 
-var userEmail = document.getElementById("email").value;
+var userEmail = document.forms["myContact"]["email"].value;
 var atpos = userEmail.indexOf("@");
 var dotpos = userEmail.lastIndexOf(".");
 if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length)
