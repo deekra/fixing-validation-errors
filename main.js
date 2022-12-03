@@ -1,24 +1,10 @@
 function validateForm(){
  var errorMessages ="";
- var validEmail = false;
  var validState = false;
  var validCountry = false;
  var validZipcode = false;
-
-var Email = document.getElementById("email").value;
-var atpos = Email.indexOf("@");
-var dotpos = Email.lastIndexOf(".");
-if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Email.length)
-{  
-    errorMessages = errorMessages +  "<p> Email is not valid. </p>";
-  }
-  else {
-    validEmail = true;
-  } 
-
   
-  
- /* var State = document.getElementById("state").value;
+var State = document.getElementById("state").value;
   if (State === "null" ||
       State === "")
   {
@@ -30,7 +16,7 @@ if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Ema
   
   
  
-   var Country = document.getElementById("country").value;
+   /*  var Country = document.getElementById("country").value;
   if (Country === "null" ||
       Country === "")
   { 
@@ -58,7 +44,7 @@ if (Email === null || Email ==="" || atpos< 1 || dotpos<atpos+2 || dotpos+2>=Ema
 
   document.getElementById("errorMessages").innerHTML = errorMessages;
  
- return (validEmail);
+ return (validState);
 
 
 } 
